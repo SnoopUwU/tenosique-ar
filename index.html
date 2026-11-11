@@ -11,12 +11,8 @@
   <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
 
     <!-- Marcador: cuando la cámara ve este dibujo, aparece lo que está dentro -->
-    <a-marker preset="hiro">
-     <a-sphere position="0 0.5 0" radius="0.5" color="#d2691e"></a-sphere>
-<a-cone position="1 0.5 0" radius-bottom="0.4" height="1" color="#ffd700"></a-cone> 
-<a-box position="0 0.5 0" color="#2e8b57"
-       animation="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear">
-</a-box>
+   <a-marker preset="hiro">
+        <a-entity gltf-model="modelo.glb" scale="1 1 1" position="0 0 0"></a-entity>
     </a-marker>
 
     <a-entity camera></a-entity>
