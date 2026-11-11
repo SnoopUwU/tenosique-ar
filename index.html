@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tenosique AR</title>
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.5/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin:0; overflow:hidden;">
+  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+
+    <!-- Marcador: cuando la cámara ve este dibujo, aparece lo que está dentro -->
+    <a-marker preset="hiro">
+      <a-box position="0 0.5 0" color="#2e8b57"></a-box>
+      <a-text value="Hola Tenosique" position="0 1.4 0" align="center"
+              color="#ffffff" width="4" rotation="-90 0 0"></a-text>
+    </a-marker>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
