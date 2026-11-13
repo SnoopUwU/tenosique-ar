@@ -11,8 +11,10 @@
   <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
 
     <!-- Marcador: cuando la cámara ve este dibujo, aparece lo que está dentro -->
-   <a-marker preset="hiro">
-        <a-entity gltf-model="modelo.glb" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+    <a-marker preset="hiro">
+      <a-box position="0 0.5 0" color="#2e8b57"></a-box>
+      <a-text value="Hola Tenosique" position="0 1.4 0" align="center"
+              color="#ffffff" width="4" rotation="-90 0 0"></a-text>
     </a-marker>
 
     <a-entity camera></a-entity>
